@@ -48,25 +48,41 @@ var app = {
     }
 };
 
+/**
+ * Choose game difficulty
+ */
 $('#difficulty').on("change", function(event) {
-    switch(this.value) {
-        case "2":
+    var difficulty = parseInt(this.value, 10);
+
+    switch(difficulty) {
+        case 2:
             $("#difficulty-feedback").html("Erg makkelijk");
             break;
-        case "3":
+        case 3:
             $("#difficulty-feedback").html("Makkelijk");
             break;
-        case "4":
+        case 4:
             $("#difficulty-feedback").html("Normaal");
             break;
-        case "5":
+        case 5:
             $("#difficulty-feedback").html("Moeilijk");
             break;
-        case "6":
+        case 6:
             $("#difficulty-feedback").html("Erg moeilijk");
             break;
         default:
             $("#difficulty-feedback").empty();
+            break;
     }
+
+    // Render the appropriate dice for the difficulty level
+    $.each([1, 2, 3, 4, 5, 6], function(index, value) {
+        if(value <= difficulty) {
+            $("#difficulty-"+value).css('visibility', 'visible');
+        } else {
+            $("#difficulty-"+value).css('visibility', 'hidden');
+        }
+    });
+
 
 });

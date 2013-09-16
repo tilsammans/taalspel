@@ -1,3 +1,25 @@
 #difficulty {
   width: 100%;
 }
+
+.cube {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+#difficulty-1 { visibility: visible; }
+#difficulty-2 { visibility: visible; }
+#difficulty-3 { visibility: hidden; }
+#difficulty-4 { visibility: hidden; }
+#difficulty-5 { visibility: hidden; }
+#difficulty-6 { visibility: hidden; }
+
+.cube div {
+  display: none;
+}
+
+.cube div:first-child {
+  display: block;
+}
