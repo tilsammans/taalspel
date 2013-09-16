@@ -21,16 +21,24 @@
     </head>
     <body>
         <div class="row">
-            <div class="large-12 columns">
-                <h1>NT2 Taalspel</h1>
-                <p>Hello world.</p>
+            <div class="small-12 columns">
+                <input id="difficulty" type="range" min="2" max="6" value="2">
+                <p id="difficulty-feedback">Erg makkelijk</p>
+                <button class="expand">Beginnen</button>
             </div>
         </div>
 
         <script type="text/javascript" src="phonegap.js"></script>
+        <script>
+          document.write('<script src=' +
+            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+            '.js><\/script>')
+        </script>
+        <script src="js/foundation.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            $(document).foundation();
         </script>
     </body>
 </html>

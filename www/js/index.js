@@ -47,3 +47,26 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+$('#difficulty').on("change", function(event) {
+    switch(this.value) {
+        case "2":
+            $("#difficulty-feedback").html("Erg makkelijk");
+            break;
+        case "3":
+            $("#difficulty-feedback").html("Makkelijk");
+            break;
+        case "4":
+            $("#difficulty-feedback").html("Normaal");
+            break;
+        case "5":
+            $("#difficulty-feedback").html("Moeilijk");
+            break;
+        case "6":
+            $("#difficulty-feedback").html("Erg moeilijk");
+            break;
+        default:
+            $("#difficulty-feedback").empty();
+    }
+
+});
