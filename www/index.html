@@ -19,80 +19,100 @@
         <title>NT2 Taalspel</title>
     </head>
     <body>
-        <div class="row">
-            <div class="small-12 columns">
-                <input id="difficulty" type="range" min="2" max="6" value="2">
-                <p id="difficulty-feedback">Erg makkelijk</p>
+
+        <form>
+            <div class="row">
+                <div class="small-12 columns">
+                    <input id="difficulty" type="range" min="2" max="6" value="2">
+                    <p id="difficulty-feedback">Erg makkelijk</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="small-12 columns">
-
-                <article class="viewport">
-                    <section id="difficulty-1" class="cube">
-                        <div>U</div>
-                        <div>Jij</div>
-                        <div>Wij/Zij/Jullie</div>
-                        <div>Hij/Zij/Het</div>
-                        <div>Ik</div>
-                        <div>JOKER</div>
-                    </section>
-
-                    <section id="difficulty-2" class="cube">
-                        <div>PRF</div>
-                        <div>IMP</div>
-                        <div>PRE</div>
-                        <div>PRF</div>
-                        <div>IMP</div>
-                        <div>PRE</div>
-                    </section>
-
-                    <section id="difficulty-3" class="cube">
-                        <div>Omdat</div>
-                        <div>Toen</div>
-                        <div>Sinds</div>
-                        <div>Hoewel</div>
-                        <div>Als</div>
-                        <div>JOKER</div>
-                    </section>
-
-                    <section id="difficulty-4" class="cube">
-                        <div>HI</div>
-                        <div>V</div>
-                        <div>H</div>
-                        <div>HI</div>
-                        <div>IV</div>
-                        <div>JOKER</div>
-                    </section>
-
-                    <section id="difficulty-5" class="cube">
-                        <div>INF</div>
-                        <div>PAR</div>
-                        <div>PV</div>
-                        <div>INF</div>
-                        <div>PAR</div>
-                        <div>PV</div>
-                    </section>
-
-                    <section id="difficulty-6" class="cube">
-                        <div>PRF</div>
-                        <div>IMP</div>
-                        <div>PRE</div>
-                        <div>PRF</div>
-                        <div>IMP</div>
-                        <div>PRE</div>
-                    </section>
-                </article>
-
+            <div class="row">
+                <div class="small-12 columns">
+                    <a id="begin" class="button expand">Beginnen</a>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="small-12 columns">
-                <button class="expand">Beginnen</button>
+            <div class="row">
+                <div class="small-12 columns">
+
+                    <article class="viewport">
+                        <section id="difficulty-1" class="cube">
+                            <div>U</div>
+                            <div>Jij</div>
+                            <div>Wij/Zij/Jullie</div>
+                            <div>Hij/Zij/Het</div>
+                            <div>Ik</div>
+                            <div>JOKER</div>
+                        </section>
+
+                        <section id="difficulty-2" class="cube">
+                            <div>PRF</div>
+                            <div>IMP</div>
+                            <div>PRE</div>
+                            <div>PRF</div>
+                            <div>IMP</div>
+                            <div>PRE</div>
+                        </section>
+
+                        <section id="difficulty-3" class="cube">
+                            <div>Omdat</div>
+                            <div>Toen</div>
+                            <div>Sinds</div>
+                            <div>Hoewel</div>
+                            <div>Als</div>
+                            <div>JOKER</div>
+                        </section>
+
+                        <section id="difficulty-4" class="cube">
+                            <div>HI</div>
+                            <div>V</div>
+                            <div>H</div>
+                            <div>HI</div>
+                            <div>IV</div>
+                            <div>JOKER</div>
+                        </section>
+
+                        <section id="difficulty-5" class="cube">
+                            <div>INF</div>
+                            <div>PAR</div>
+                            <div>PV</div>
+                            <div>INF</div>
+                            <div>PAR</div>
+                            <div>PV</div>
+                        </section>
+
+                        <section id="difficulty-6" class="cube">
+                            <div>PRF</div>
+                            <div>IMP</div>
+                            <div>PRE</div>
+                            <div>PRF</div>
+                            <div>IMP</div>
+                            <div>PRE</div>
+                        </section>
+                    </article>
+
+                </div>
             </div>
-        </div>
+
+            <section id="send">
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <textarea placeholder="Type je zin..."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <input type="submit" class="button expand" value="Versturen">
+                    </div>
+                </div>
+
+            </section>
+
+        </form>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script>

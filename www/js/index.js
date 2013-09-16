@@ -86,3 +86,14 @@ $('#difficulty').on("change", function(event) {
 
 
 });
+
+/**
+ * Clicked the begin button.
+ */
+$("#begin").on("click", function(event) {
+
+    event.preventDefault();
+    $("#send").show("fast");
+    window.scroll(0, 120);
+
+});
